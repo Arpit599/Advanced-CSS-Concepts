@@ -1,0 +1,41 @@
+body{
+    background-color: palegoldenrod;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin-top: 50px;
+    border: 5px solid orange;
+    display: flex;
+    /* space-between, space-around, space-evenly, flex-end, flex-start are other options*/
+    /* justify-content:center;  */
+}
+
+h1{
+    color: palegoldenrod;
+    margin: 0;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+} 
+
+
+.home{
+    background-color: tomato;
+    /* margin-right: auto; */
+    /* flex: 1; */
+    width: 300px;
+}
+
+.search{
+    background-color:steelblue;
+    width: 300px;
+}
+
+.logout{
+    background-color:tomato;
+    width: 300px;
+}
+
+div{
+}
