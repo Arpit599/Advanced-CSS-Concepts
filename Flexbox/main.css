@@ -28,7 +28,7 @@ h1{
 }
 
 .search{
-    background-color:steelblue;
+    background-color:teal;
     width: 300px;
 }
 
@@ -38,4 +38,5 @@ h1{
 }
 
 div{
+    flex-basis: 350px;
 }
