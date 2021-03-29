@@ -1,9 +1,11 @@
-body{
+body, html{
     background-color:#444;
+    height: 100vh;
 }
 .box{
     width: 200px;
     height: 200px;
+    margin: auto;
     background-color: white;
     transition-property: all;
     transition-duration: 1s;

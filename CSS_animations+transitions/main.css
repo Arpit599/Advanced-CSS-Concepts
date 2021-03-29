@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.header{
+    height: 300px;
+}
+
+.header h1{
+    font-size: 50px;
+    line-height: 1.5;
+    position: relative;
+    animation-name: headerAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes headerAnimation{
+    0% {top: -75px;}
+    100% {top: 150px;}
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+    padding: 0px 30px;
+    position: relative;
+    animation-name: containerAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes containerAnimation{
+    0% {left: -1500px;}
+    100% {left: 0px;}
+}
+
+.btn{
+    margin-top: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    opacity: 0;
+    animation-name: btnAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes btnAnimation{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
