@@ -1,0 +1,66 @@
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 0;
+    justify-content: space-evenly;
+}
+
+.animationBtn1 {
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+    color: white;
+    /* background-size: 40px 40px; */
+    background-image: url(pattern.png);
+    border: 2px teal solid;
+    outline: none;
+    text-transform: uppercase;
+    padding: 20px 40px 20px 40 px;
+    border-radius: 1rem;
+}
+
+.animationBtn1:hover{
+    /* background-position: 40px 0; */
+    animation: btn1_anim 1s linear infinite;
+}
+
+@keyframes btn1_anim{
+    from { background-position: 0 0;}
+    to {background-position: 40px 0;}
+}
+
+.animationBtn2 {
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    /* background-size: 40px 40px; */
+    background-color: tomato;
+    border: 2px white solid;
+    outline: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px 40px 20px 40 px;
+    border-radius: 1rem;
+    transition: all ease 0.5s;
+}
+
+.animationBtn2::after{
+    position: absolute;
+    content: ">>";
+    right: 0.75rem;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.animationBtn2:hover{
+    padding: 20px 20px 20px 0px;
+}
+
+.animationBtn2:hover::after{
+    right: 1.75rem;
+    opacity: 1;
+}

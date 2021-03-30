@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#333;
+    margin: 0px 0px;
+}
+
+.gradientBtn1{
+    text-transform: uppercase;
+    border: 5px solid transparent;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-image: linear-gradient(to top right, orangered, yellow);
+    border-image-slice: 1;
+    color: orangered;
+}
+
+.gradientBtn1:hover{
+    color: white;
+    background-image: linear-gradient(to top right, orangered, yellow);
+}
+
+.gradientBtn2{
+    text-transform: uppercase;
+    border: 5px solid transparent;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-image: linear-gradient(to right, red, transparent);
+    border-image-slice: 1;
+    color: red;
+}
+
+.gradientBtn2:hover{
+    color: white;
+    background-image: linear-gradient(to right, red, transparent);
+    border-right-style: none;
+}
