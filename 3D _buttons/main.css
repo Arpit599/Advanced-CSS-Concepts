@@ -1,0 +1,71 @@
+body{
+    height: 100vh;
+    display: flex;
+    background: #333;
+}
+
+.btn_3d {
+    margin: auto;
+    background-color: orangered;
+    position: relative;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+
+.btn_3d:hover{
+    background-color: hsl(16, 100%, 45%);
+}
+
+.btn_3d:active{
+    background-color: hsl(16, 100%, 35%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+
+/* To make upper left triangle, we use this trick of having div of 0 width and height but 6px border */
+.btn_3d::before{
+    width: 0;
+    height: 0;
+    content: "";
+    border: 6px solid transparent;
+    border-right: 6px solid hsl(16, 100%, 30%);
+    position: absolute;
+    border-left-width: 0;
+    top: 0px;
+    left: -6px;
+}
+
+.btn_3d:active::before{
+    border: 3px solid transparent;
+    border-right: 3px solid hsl(16, 100%, 30%);
+    border-left-width: 0;
+    top: 0px;
+    left: -3px;
+}
+
+/* To make lower right triangle, we use this trick of having div of 0 width and height but 6px border */
+.btn_3d::after{
+    width: 0;
+    height: 0;
+    content: "";
+    /* display: block; */
+    border: 6px solid transparent;
+    border-top: 6px solid hsl(16, 100%, 30%);
+    position: absolute;
+    border-bottom-width: 0;
+    right: 0px;
+    bottom: -6px;
+}
+
+.btn_3d:active::after{
+    border: 3px solid transparent;
+    border-top: 3px solid hsl(16, 100%, 30%);
+    border-bottom-width: 0;
+    right: 0px;
+    bottom: -3px;
+}
