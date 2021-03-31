@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+#input1{
+    display: none;
+}
+
+label{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.input1_btn{
+    position: relative;
+    font-size: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #f2395A;
+    width: 80px;
+    height: 30px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.input1_btn::before{
+    position: absolute;
+    content: "Off";
+    color: #f2395A;
+    background-color: white;
+    right: 0;
+    display: inline-block;
+    height: 15px;
+    padding: 0 3px;
+    transition: all 0.3s ease;
+    top: 7px;
+    left: 40px;
+    font-weight: 600;
+}
+
+#input1:checked + .input1_btn{
+    background-color: #00b3b4;
+}
+
+#input1:checked + .input1_btn::before{
+    content: "ON";
+    color: #00b3b4;
+    background-color: white;
+    left: 0px;
+    right: 40px;
+}
+
+#input2{
+    vertical-align: top;
+    font-size: 0.8rem;
+    margin: 0 15px 0 0;
+    display: none;
+}
+
+.input2_btn{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: white;
+    color: #aaa;
+    line-height: 20px;
+    border: solid 1px #ccc;
+    padding: 5px 10px 5px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.input2_btn::before{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: #aaa;
+    top: 10px;
+    left: 10px;
+    transition: all ease 0.3s;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+#input2:checked + .input2_btn {
+    background-color: #00b3b4;
+    color: white;
+}
+
+#input2:checked + .input2_btn::before{
+    background-color: white;
+}
