@@ -90,6 +90,7 @@ label{
 #input2:checked + .input2_btn {
     background-color: #00b3b4;
     color: white;
+    border-color: #00b3b4;
 }
 
 #input2:checked + .input2_btn::before{
