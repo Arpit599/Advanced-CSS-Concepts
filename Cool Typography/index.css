@@ -1,4 +1,20 @@
+body{
+    background-color: rgba(240, 230, 140, 0.9);
+    height: 100vh;
+    margin: 0;
+}
+
+.sandbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .shadow-typo{
+    display: inline-block;
     font-family: 'Bubblegum Sans';
     font-size: 6rem;
     color: #00b3b4;
@@ -7,6 +23,7 @@
 }
 
 .threedee-typo{
+    display:inline-block;
     font-size: 6rem;
     text-transform: uppercase;
     font-family: 'Roboto Condensed';
