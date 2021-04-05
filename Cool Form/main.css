@@ -6,7 +6,7 @@ body{
 
 .register-wrapper{
     margin: 0;
-    background-color: #f2395a;
+    background-image: linear-gradient(135deg, #ff627f, #620919);
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -18,11 +18,28 @@ body{
 .register-block{
     margin: 0;
     box-sizing: border-box;
-    padding: 20px 50px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 500px;
-    width: 300px;
-    border-radius: 20px;
+    height: 350px;
+    width: 250px;
+    border-radius: 0.5rem;
+}
+
+.register-title{
+    font-size: 1.5em;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #e6e6e6;
+    font-family: 'Bubblegum Sans';
+    color: #7d7b7b
+}
+
+p{
+    font-family: 'Roboto Condensed'
+}
+
+.register-block form input:not(:last-child){
+    margin-bottom: 20px;
 }
